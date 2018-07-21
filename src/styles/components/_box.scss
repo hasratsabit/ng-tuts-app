@@ -1,0 +1,12 @@
+
+.box {
+    width: 100%;
+
+
+    background: orange;
+
+    &__header {
+        height: 50px;
+        background: $color-primary-light;
+    }
+}

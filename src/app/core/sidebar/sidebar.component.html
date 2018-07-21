@@ -1,0 +1,25 @@
+<div [ngClass]="sidebarIsToggled ? 'slideOut' : null " class="sidebar">
+    <div (click)="toggleSidebar()" class="sidebar__menu-icon">
+      <span class="sidebar__menu-icon--top"></span>
+      <span class="sidebar__menu-icon--middle"></span>
+      <span class="sidebar__menu-icon--bottom"></span>
+    </div>
+    <div class="sidebar__user-profile"></div>
+    <ul class="sidebar__list">
+      <li class="sidebar__list-item">
+          <i class="fas fa-home"></i><a href="" class="sidebar__list-link">Home</a>
+      </li>
+      <li class="sidebar__list-item">
+          <i class="fas fa-book"></i><a href="" class="sidebar__list-link">Blogs</a>
+      </li>
+      <li class="sidebar__list-item">
+          <i class="fas fa-code"></i><a href="" class="sidebar__list-link">Tutorials</a>
+      </li>
+      <li class="sidebar__list-item">
+          <i class="fas fa-comments"></i><a href="" class="sidebar__list-link">Forum</a>
+      </li>
+      <li class="sidebar__list-item">
+          <i class="fas fa-envelope"></i><a href="" class="sidebar__list-link">Contact</a>
+      </li>
+    </ul>
+  </div>
