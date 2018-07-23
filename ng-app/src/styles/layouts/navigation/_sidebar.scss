@@ -32,6 +32,14 @@
             color: $color-primary-light;
         }
 
+        &.active {
+          background-color: $color-grey-light;
+        }
+
+        &.active .sidebar__list-link {
+          color: $color-primary-light;
+        }
+
         .fas {
             margin-right: 10px;
             color: $color-grey-dark;

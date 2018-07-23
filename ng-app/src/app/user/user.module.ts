@@ -1,20 +1,24 @@
+import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 import { UserRoutingModule } from './user-routing.module';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LogoutComponent } from './logout/logout.component';
+import { UserDirective } from './common/user.directive';
 
 @NgModule({
   imports: [
-    CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    SharedModule
   ],
   declarations: [
     RegisterComponent, 
-    LoginComponent, ProfileComponent, LogoutComponent
+    LoginComponent, 
+    ProfileComponent, 
+    LogoutComponent, 
+    UserDirective
   ]
 })
 export class UserModule { }

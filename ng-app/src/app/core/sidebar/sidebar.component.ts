@@ -1,3 +1,4 @@
+import { NavigationService } from './../services/navigation.service';
 import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
 import { trigger, state, transition, style, animate} from '@angular/animations';
 
@@ -10,10 +11,12 @@ export class SidebarComponent implements OnInit, AfterViewInit {
 
   public sidebarIsToggled: Boolean;
   constructor(
-    private elem: ElementRef
+    private elem: ElementRef,
+    private navService: NavigationService
   ) { }
 
   toggleSidebar() {
+    
     const headerNav = document.querySelector('.header');
     const mainContainer = document.querySelector('.main-container');
     this.sidebarIsToggled = !this.sidebarIsToggled;
@@ -29,10 +32,10 @@ export class SidebarComponent implements OnInit, AfterViewInit {
 
 
   ngOnInit() {
+    
   }
 
   ngAfterViewInit() {
-
   }
 
 }

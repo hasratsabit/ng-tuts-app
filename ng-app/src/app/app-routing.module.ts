@@ -7,8 +7,12 @@ const routes: Routes = [
     loadChildren: 'src/app/user/user.module#UserModule'
   },
   {
+    path: 'blog',
+    loadChildren: 'src/app/features/blog/blog.module#BlogModule'
+  },
+  {
     path: '',
-    redirectTo: '',
+    redirectTo: 'blog/blogs',
     pathMatch: 'full'
   }
 ];

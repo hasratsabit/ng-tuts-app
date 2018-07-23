@@ -8,22 +8,10 @@ import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
 
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'register',
-    component: RegisterComponent
-  },
-  {
-    path: 'profile',
-    component: ProfileComponent
-  },
-  {
-    path: 'logout',
-    component: LogoutComponent
-  }
+  { path: 'login', component: LoginComponent, data: { state: 'login'}},
+  { path: 'register', component: RegisterComponent,  data: { state: 'register'}},
+  { path: 'profile', component: ProfileComponent, data: { state: 'profile'}},
+  { path: 'logout', component: LogoutComponent, data: { state: 'logout'} }
 ];
 
 @NgModule({

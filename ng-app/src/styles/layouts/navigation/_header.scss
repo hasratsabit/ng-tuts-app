@@ -27,6 +27,15 @@
         &:hover .header__list-link {
             color: $color-primary-light;
         }
+
+        &.active {
+          background-color: $color-grey-light;
+        }
+
+        &.active .header__list-link {
+          color: $color-primary-light;
+        }
+
     }
 
     &__list-link {
